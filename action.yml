@@ -1,0 +1,15 @@
+name: 'Aws task definition cleaner'
+description: 'Delete old aws ecs task definitions'
+inputs:
+    prefix:
+        description: 'Prefix of cleaned tasks'
+        required: true
+    maxTasks:
+        description: 'The number of tasks revisions to remain'
+        required: true
+    region:
+        description: 'Aws region'
+        required: true
+runs:
+    using: 'node12'
+    main: 'index.js'
