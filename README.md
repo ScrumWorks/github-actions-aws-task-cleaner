@@ -19,7 +19,7 @@ This action delete old aws ecs [task definitions](https://docs.aws.amazon.com/Am
 
 ## Example usage
 ```yaml
-uses: vahidov/github-actions-aws-task-cleaner@v1
+uses: ScrumWorks/github-actions-aws-task-cleaner@v1
 with:
     prefix: taskName
     maxTasks: 6
